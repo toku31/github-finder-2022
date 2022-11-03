@@ -11,7 +11,7 @@ function RepoList({repos}) {
           {repos.map((repo) => {
             return (
               // <h3>{repo.name}</h3>
-              <RepoItem repo={repo}  />
+              <RepoItem repo={repo}  key={repo.name}/>
             ) 
           })}
       </div>
